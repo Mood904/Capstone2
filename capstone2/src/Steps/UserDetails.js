@@ -1,6 +1,7 @@
 import React from 'react';
 import {Form} from 'react-bootstrap'
-const UserDetails = () => {
+
+const UserDetails = ({values, handleChange}) => {
     return (
         <div>
             <Form className= "mt-5">
@@ -8,17 +9,17 @@ const UserDetails = () => {
 
                 <Form.Group className="mt-5">
                     <Form.Label>First Name</Form.Label>
-                    <Form.Control type="text" placeholder="First Name" />
+                    <Form.Control defaultvalue ={values.firstName} onChange = {handleChange('firstName')} type="text" placeholder="first Name" />
                 </Form.Group>
 
                 <Form.Group className="mt-5">
                     <Form.Label>Last Name</Form.Label>
-                    <Form.Control type="text" placeholder="Last Name" />
+                    <Form.Control defaultvalue ={values.lastName} onChange = {handleChange('lastName')} type="text" placeholder="Last Name" />
                 </Form.Group>
 
                 <Form.Group className="mt-5">
                     <Form.Label>E-mail</Form.Label>
-                    <Form.Control type="email" placeholder="First Name" />
+                    <Form.Control defaultvalue ={values.email} onChange = {handleChange('email')}type="email" placeholder="email" />
                 </Form.Group>
 
                                      
