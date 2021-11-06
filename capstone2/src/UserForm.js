@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React,{useState} from 'react'
 import Biography from './Steps/Biography'
 import Confirm from './Steps/Confirm'
 import UserDetails from './Steps/UserDetails'
@@ -15,12 +15,12 @@ const UserForm = () => {
     const steps = getSteps()
 
     const [multiFormValues, setMultiFormValues] = useState({
-        firstName: [''],
-        lastName:[''],
-        email: [''],
-        job:[''],
-        city: [''],
-        country:['']
+        firstName: '',
+        lastName:'',
+        email: '',
+        job:'',
+        city: '',
+        country:''
     })
 
     const handleNext = () => {

@@ -8,17 +8,17 @@ const Biography = ({values, handleChange}) => {
 
                 <Form.Group className="mt-5">
                     <Form.Label>Job</Form.Label>
-                    <Form.Control defaultValue ={values.job} onChange={handleChange('job')} type="text" placeholder="Job" />
+                    <Form.Control defaultValue={values.job} onChange={handleChange('job')} type="text" placeholder="Job" />
                 </Form.Group>
 
                 <Form.Group className="mt-5">
                     <Form.Label>City</Form.Label>
-                    <Form.Control ddefaultValue={values.city} onChange={handleChange('email')} type="text" placeholder="City" />
+                    <Form.Control defaultValue={values.city} onChange={handleChange('email')} type="text" placeholder="City" />
                 </Form.Group>
 
                 <Form.Group className="mt-5">
                     <Form.Label>Country</Form.Label>
-                    <Form.Control type="email" placeholder="Country" />
+                    <Form.Control defaultValue={values.country}type="email" placeholder="Country" />
                 </Form.Group>
 
                                      

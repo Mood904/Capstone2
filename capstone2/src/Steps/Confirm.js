@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react'
-import { ListGroup } from 'react-bootstrap'
+import ListGroup from 'react-bootstrap/ListGroup'
 
 const Confirm = ({values}) => {
 
-    const{firstName, lastName, email, job, city, country}=values
+    const {firstName,lastName,email,job,city,country} = values
 
     return (
         <div>
