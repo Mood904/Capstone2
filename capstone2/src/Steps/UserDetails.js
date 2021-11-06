@@ -1,7 +1,8 @@
-import React from 'react';
-import {Form} from 'react-bootstrap'
+import React from "react";
+import {Form} from "react-bootstrap";
 
 const UserDetails = ({values, handleChange}) => {
+    console.log(values,handleChange);
     return (
         <div>
             <Form className= "mt-5">
@@ -9,17 +10,17 @@ const UserDetails = ({values, handleChange}) => {
 
                 <Form.Group className="mt-5">
                     <Form.Label>First Name</Form.Label>
-                    <Form.Control defaultvalue ={values.firstName} onChange = {handleChange('firstName')} type="text" placeholder="first Name" />
+                    <Form.Control defaultValue={values.firstName} onChange = {handleChange("firstName")} type="text" placeholder="First Name" />
                 </Form.Group>
 
                 <Form.Group className="mt-5">
                     <Form.Label>Last Name</Form.Label>
-                    <Form.Control defaultvalue ={values.lastName} onChange = {handleChange('lastName')} type="text" placeholder="Last Name" />
+                    <Form.Control defaultValue={values.lastName} onChange = {handleChange("lastName")} type="text" placeholder="Last Name" />
                 </Form.Group>
 
                 <Form.Group className="mt-5">
                     <Form.Label>E-mail</Form.Label>
-                    <Form.Control defaultvalue ={values.email} onChange = {handleChange('email')}type="email" placeholder="email" />
+                    <Form.Control defaultValue={values.email} onChange = {handleChange("email")}type="email" placeholder="email" />
                 </Form.Group>
 
                                      
